@@ -19,13 +19,13 @@
 <h5>如需要帮助，请咨询<img src="image/icon2.bmp"/>或拨打400-800-1688</h5>
 <form method="post">
 电子邮箱：
-<input type="email" name="email"/><br/><br/>
+<input type="email" name="email" required pattern="\w+@\w+(\.[a-z](2,4){1,2})"/><br/><br/>
 会员登录名：
-<input type="login name" name="login"/><br/><br/>
+<input type="login name" name="login" value="ss"/><br/><br/>
 密码：
-<input type="password" name="pass"  vlaue="123456" /><br/><br/>
+<input type="password" name="pass"  required pattern="[\dA-Za-z]{6,8}" /><br/><br/>
 再次输入密码：
-<input type="repassword" name="pass"  vlaue="123456" /><br/><br/>
+<input type="repassword" name="pass"  required pattern="[\dA-Za-z]{6,8}" /><br/><br/>
 会员身份：
 <input name="identity" type="radio" value="买家" />买家
 <input name="identity" type="radio" value=" 卖家 " checked="checked" />卖家
